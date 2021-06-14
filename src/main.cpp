@@ -25,8 +25,8 @@ uint32_t in2On = 0;
 
 void loop()
 {
-  bool in1 = digitalRead(IN1);
-  bool in2 = digitalRead(IN2);
+  bool in1 = !digitalRead(IN1);
+  bool in2 = !digitalRead(IN2);
 
   if (in1)
   {
